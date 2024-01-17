@@ -1,27 +1,43 @@
 {
-  "name": "express-hello-world",
+  "name": "jisr-2",
   "version": "1.0.0",
-  "description": "Expressjs Hello World example to provide faster start deploying on Cyclic platform",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "serve": "nodemon --watch . server.js",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyclic-software/express-hello-world.git"
+    "url": "git+https://github.com/zakhoudache/Jisr-Messenger-App.git"
   },
-  "author": "Cyclic Software",
-  "license": "MIT",
+  "author": "Houdache zakaria",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cyclic-software/express-hello-world/issues"
+    "url": "https://github.com/zakhoudache/Jisr-Messenger-App/issues"
   },
-  "homepage": "https://github.com/cyclic-software/express-hello-world#readme",
+  "homepage": "https://github.com/zakhoudache/Jisr-Messenger-App#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "@babel/node": "^7.20.7",
+    "body-parser": "^1.20.1",
+    "browserify": "^17.0.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "electron": "^22.0.2",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "google-spreadsheet": "^3.3.0",
+    "nodemon": "^2.0.20",
+    "parse": "^3.5.1",
+    "request": "^2.88.2",
+    "requirejs": "^2.3.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "netlify-cli": "^17.14.0",
+    "supabase": "^1.131.4"
   }
 }

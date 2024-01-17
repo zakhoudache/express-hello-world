@@ -1,0 +1,67 @@
+npm init
+npm install --save express dotenv ejs
+create src folder
+create inside src folder server.js file
+create inside src folder config folder
+create inside src folder routes folder
+create inside src folder views folder
+npm install --save-dev nodemon babel-cli babel-preset-env
+
+add ==> "start": "nodemon --exec babel-node src/server.js" to package.json
+npm install @babel/preset-env (incase)
+npm install body-parser (incase)
+npm start
+
+[to upload the project's files to github for the first time follow this steps:]:
+
+git init
+git commit -m "Initial commit"
+git remote add origin remoteRepositoryURL
+git push -u origin master
+
+
+-------------------------------
+
+git add .
+git commit -m "update"
+gi push origin master
+---------------------------------
+curl -X GET "localhost:8080/webhook?hub.verify_token=itsJustaRandomString123456&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe"
+curl -X GET "localhost:1337/webhook?hub.verify_token=itsJustaRandomString123456789&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe"
+curl -X GET "localhost:8080/webhook?hub.verify_token=MySecondRandomString123456789&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe"
+curl -H "Content-Type: application/json" -X POST "localhost:8080/webhook" -d '{"object": "page", "entry": [{"messaging": [{"message": "TEST_MESSAGE"}]}]}'
+
+APP_ID = 57QeEwR8Jc0rC5Fg6yXyTpCGzpn8zijeHSHqHBNQ
+JAVASCRIPT KEY = WqGAtQtmSxDfelKaCn5T02XCPDjmd9Zpf3PFhKQc
+
+npm install parse
+
+git init
+
+
+git add .
+git commit -m "init project"
+git push origin master
+
+privacy policy=https://www.freeprivacypolicy.com/live/07f52fa4-80f1-45ff-aff1-3b251c55d282
+
+https://graph.facebook.com/v15.0/me/messenger_profile?access_token=<PAGE_ACCESS_TOKEN>
+
+curl -X GET "https://graph.facebook.com/v15.0/me/messenger_profile?fields=whitelisted_domains,greeting&access_token=EAATrmhCRFboBAA4HgyAlM5spUaMMjh6J4SmAET1xBS24j8ZBUbSZBA9RCuBmp5nVio7HpdWPRwjXeFRE8ZCyD7rTOkDoAtpmE2WZCRrAeIED81kLGBXV5XEtTXhwcsruXYWk6enHl3AiPdSQUgER3ZAmjcwCajiGruZA9xt9PwAekWMDuhbsBP5UlNk0UIQRtjTIKGp3gZBHQZDZD"
+
+https://jisr-messenger-app.onrender.com
+
+https://m.facebook.com/?tbua=1
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "whitelisted_domains":[
+    "https://jisr-messenger-app.onrender.com/"
+  ]
+}' "https://graph.facebook.com/v15.0/me/messenger_profile?access_token=EAATrmhCRFboBAA4HgyAlM5spUaMMjh6J4SmAET1xBS24j8ZBUbSZBA9RCuBmp5nVio7HpdWPRwjXeFRE8ZCyD7rTOkDoAtpmE2WZCRrAeIED81kLGBXV5XEtTXhwcsruXYWk6enHl3AiPdSQUgER3ZAmjcwCajiGruZA9xt9PwAekWMDuhbsBP5UlNk0UIQRtjTIKGp3gZBHQZDZD"
+
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "get_started": {"payload": "GET_STARTED"}
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAATrmhCRFboBAA4HgyAlM5spUaMMjh6J4SmAET1xBS24j8ZBUbSZBA9RCuBmp5nVio7HpdWPRwjXeFRE8ZCyD7rTOkDoAtpmE2WZCRrAeIED81kLGBXV5XEtTXhwcsruXYWk6enHl3AiPdSQUgER3ZAmjcwCajiGruZA9xt9PwAekWMDuhbsBP5UlNk0UIQRtjTIKGp3gZBHQZDZD"
